@@ -1,5 +1,16 @@
 .home {
 
+  header{
+    border-bottom: 2px dashed @navigation-border;
+    .flex(column);
+    align-items: flex-start;
+    div{
+      padding-top: 2%;
+      padding-bottom: 2%;
+    }
+  }
+  
+
   .content-section {
     margin: 30px 0;
     display: flex;
@@ -56,6 +67,35 @@
     .destination {
       width: 30%;
       margin-bottom: 30px;
+
+      .btn{
+        .buttonsetup(teal, 10%, 10%);
+      }
     }
   }
+  @media @mobile{
+    padding: 2.5%;
+
+    header{
+      padding-top: 0;
+    }
+
+    .content-pick{
+      .flex(column);
+      align-items: center;
+
+      .destination{
+        width: 80%;
+
+        .btn{
+          .buttonsetup(teal, 200%, 200%);
+          padding:0;
+          margin: 0;
+        }
+      }
+    }
+
+
+  }
+
 }// home

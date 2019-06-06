@@ -1,1 +1,36 @@
 // Navigation Styles here
+.navbar{
+    .flex(row);
+    justify-content: flex-start;
+    margin-top: 2.5%;
+    width:80%;
+    padding-left: 21.85%;
+    align-items: baseline;
+
+    nav{
+        .flex(row);  
+        justify-content: space-evenly;
+        padding-left: 40%;
+        width: 85%;
+        font-size: 1.6rem;
+        a{
+            text-decoration: none;
+            color: black;           
+        }
+    }
+
+    @media @mobile{
+        .flex(column);
+        justify-content: center;
+        align-items: center;
+        padding-left: 0;
+        margin-bottom: 0;
+        width:100%;
+        nav{
+            .flex(row);
+            padding-left: 0;
+            width:100%;
+        }
+    }
+    border-bottom: 2px dashed @navigation-border;
+}
