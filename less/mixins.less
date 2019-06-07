@@ -1,1 +1,22 @@
 // Mixins in here
+
+.flex(@direction){
+    display: flex;
+    flex-direction: @direction;
+}
+
+.buttonsetup(@backgroundcolor, @height1, @lineheight){
+    display: inline-block;
+    height: @height1;
+    line-height: @lineheight;
+    width: 80%;
+    background-color: @backgroundcolor;
+    text-align: center;
+    font-size: 1.6rem;
+    color: white;
+    border-radius: 15px;
+    padding: 1.5em 0;
+    margin-bottom: 10%;
+
+
+}
